@@ -35,6 +35,7 @@ const type2 = css`
 
 const type3 = css`
   ${wh(6, 6)};
+  margin: 12px 20px;
   background-color: #071520;
 `;
 
@@ -42,7 +43,7 @@ const types = [type1, type2, type3];
 
 const EyesWrapper = styled.div`
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: -50%;
   ${wh("200%", 20)};
   ${flex()};
