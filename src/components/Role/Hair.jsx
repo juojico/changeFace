@@ -61,7 +61,9 @@ const type4 = css`
   background-color: #071520;
 `;
 
-const types = [type1, type2, type3, type4];
+const type5 = css``;
+
+const types = [type1, type2, type3, type4, type5];
 
 const HairWrapper = styled.div`
   position: absolute;

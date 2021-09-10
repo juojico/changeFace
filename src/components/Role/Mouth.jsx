@@ -17,8 +17,8 @@ const type2 = css`
 `;
 
 const type3 = css`
-  ${wh(16, 6)};
-  ${xy(42, 60)};
+  ${wh(16, 10)};
+  ${xy(42, 50)};
   background-color: #da5656;
   border-radius: 10px;
   box-shadow: 0 6px 0 #da5656;

@@ -67,7 +67,23 @@ const type4 = css`
   background-color: #071520;
 `;
 
-const types = [type1, type2, type3, type4];
+const type5 = css`
+  ${wh(12, 12)};
+  margin: 6px 14px;
+  background-color: #091722;
+
+  &::before,
+  &::after {
+    ${wh(4, 4)};
+    ${xy(2, 2)};
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: white;
+  }
+`;
+
+const types = [type1, type2, type3, type4, type5];
 
 const EyesWrapper = styled.div`
   position: absolute;
