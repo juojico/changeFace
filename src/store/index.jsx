@@ -9,9 +9,9 @@ export const useStore = create((set) => ({
   changeFace: () =>
     set((state) => ({ ...state, face: repeatRange(state.face + 1, 2) })),
   changeEyes: () =>
-    set((state) => ({ ...state, eyes: repeatRange(state.eyes + 1, 2) })),
+    set((state) => ({ ...state, eyes: repeatRange(state.eyes + 1, 3) })),
   changeHair: () =>
-    set((state) => ({ ...state, hair: repeatRange(state.hair + 1, 2) })),
+    set((state) => ({ ...state, hair: repeatRange(state.hair + 1, 3) })),
   changeMouth: () =>
     set((state) => ({ ...state, mouth: repeatRange(state.mouth + 1, 2) })),
 }));

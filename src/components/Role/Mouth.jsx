@@ -3,11 +3,15 @@ import styled, { css } from "styled-components";
 import { wh, xy } from "styles/mixin";
 
 const type1 = css`
+  ${wh(20, 15)};
+  ${xy(40, 73)};
   border-radius: 0 0 20px 20px;
-  background-image: linear-gradient(#bd0c0c, #ec0000);
+  background-image: linear-gradient(#bd0c0c, #f77171);
 `;
 
 const type2 = css`
+  ${wh(30, 15)};
+  ${xy(35, 73)};
   background-image: linear-gradient(#bd0c0c, #ec0000);
   border-radius: 50px 50px 0 0;
 `;
@@ -24,14 +28,12 @@ const types = [type1, type2, type3];
 
 const MouthWrapper = styled.div`
   position: absolute;
-  ${wh(30, 15)};
-  ${xy(35, 73)};
 
   ${({ type }) => types[type]}
 `;
 
-const Mouth = ({ children, type }) => {
-  return <MouthWrapper type={type}>{children}</MouthWrapper>;
+const Mouth = ({ type }) => {
+  return <MouthWrapper type={type}></MouthWrapper>;
 };
 
 export default Mouth;
